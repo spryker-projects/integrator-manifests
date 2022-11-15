@@ -1,0 +1,32 @@
+{
+    "glossary-key": {
+        "new": {
+            "customer.cancel_subscription.success_message": {
+                "de_DE": "Das Abonnement für Produkt %product% wurde erfolgreich gekündigt",
+                "en_US": "Subscription for product %product% has been successfully canceled"
+            },
+            "customer.cancel_subscription.error_message": {
+                "de_DE": "Das Abonnement für diesen Bestellartikel kann nicht gekündigt werden!",
+                "en_US": "Can't cancel subscription for this order item!"
+            },
+            "customer.cancel_subscription.warning_message": {
+                "de_DE": "Abonnement bereits gekündigt!",
+                "en_US": "Subscription already cancelled!"
+            },
+            "oms.state.subscription-active": {
+                "de_DE": "Abonnement aktiv",
+                "en_US": "Subscription Active"
+            },
+            "oms.state.subscription-cancelled": {
+                "de_DE": "Abonnement gekündigt",
+                "en_US": "Subscription Cancelled"
+            }
+        }
+    },
+    "copy-module-file":  [
+        {
+            "target": "config/Zed/oms/SubscriptionSubprocess/DummySubscription01.xml",
+            "source": "config/Zed/oms/SubscriptionSubprocess/DummySubscription01.xml"
+        }
+    ]
+}

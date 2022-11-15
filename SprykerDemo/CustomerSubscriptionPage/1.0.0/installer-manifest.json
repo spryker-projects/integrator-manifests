@@ -1,0 +1,45 @@
+{
+    "configure-env": [
+        {
+            "target": "\\Spryker\\Shared\\Kernel\\KernelConstants::CORE_NAMESPACES",
+            "value": {
+                "value": "array_merge($config[\\Spryker\\Shared\\Kernel\\KernelConstants::CORE_NAMESPACES], ['SprykerDemo'])",
+                "is_literal": true
+            }
+        }
+    ],
+    "wire-plugin": [
+        {
+            "target": "\\Spryker\\Yves\\Router\\RouterDependencyProvider::getRouteProvider",
+            "source": "\\SprykerDemo\\Yves\\CustomerSubscriptionPage\\Plugin\\Router\\CustomerSubscriptionPageRouteProviderPlugin"
+        }
+    ],
+    "glossary-key": {
+        "new": {
+            "customer.account.subscriptions": {
+                "de_DE": "Abonnements",
+                "en_US": "Subscriptions"
+            },
+            "customer.subscription.subscription_id": {
+                "de_DE": "Referenz",
+                "en_US": "Reference"
+            },
+            "customer.subscription.interval": {
+                "de_DE": "Intervall",
+                "en_US": "Interval"
+            },
+            "customer.subscription.item_state": {
+                "de_DE": "Stand",
+                "en_US": "State"
+            },
+            "customer.subscription.item_name": {
+                "de_DE": "Artikelname",
+                "en_US": "Name"
+            },
+            "customer.account.no_subscriptions": {
+                "de_DE": "Derzeit keine Abonnements",
+                "en_US": "No subscriptions at the moment"
+            }
+        }
+    }
+}
